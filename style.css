@@ -1,0 +1,31 @@
+.bg-image {
+    background: url('./cover/immagine_sfondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-rounded {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+@keyframes rotateCover {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .img-rounded {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .img-rounded {
+        width: 200px;
+        height: 200px;
+    }
+}
